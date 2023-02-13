@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Keeton Bot</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <link rel="icon" href="static/images/logobot.png">
+
+  <!-- Latest compiled and minified CSS -->
+
+
+
+<!-- Popper JS -->
+
+<!-- Latest compiled JavaScript -->
+
+
+
+  <style>
+    button:disabled,
+    button[disabled]{
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+}
+div#google_translate_element {
+  display: inline-block;
+}
+.ui-autocomplete {
+  max-height: 200px;
+  overflow-y: auto;
+  /* prevent horizontal scrollbar */
+  overflow-x: hidden;
+  /* add padding to account for vertical scrollbar */
+  padding-right: 20px;
+}
+
+.spacer {
+  height: 500px;
+  background: linear-gradient(to bottom, #ffffff 0%,#2989d8 50%,#ffffff 100%);
+}
+
+
+  </style>
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <section class="msger">
+
+    <main class="msger-chat" style="background-image: url('static/images/bg.jpg'); background-repeat: no-repeat !important; background-size:cover !important">
+
+
+
+
+
+
+
+    </main>
+
+
+
+    <form class="msger-inputarea">
+      <input type="text" class="msger-input" id="textInput" onfocus="this.value=''" placeholder="Type Here....">
+      <button type="submit" onclick="" class="msger-send-btn">Send</button>
+    </form>
+
+
+
+  </section>
+
+
+  <script src='https://use.fontawesome.com/releases/v5.0.13/js/all.js'></script>
+  <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+
+
+
+</body>
+
+</html>
